@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json in javascript</title>
+</head>
+<body>
+    <div class="container">
+        <h1>his is my heading</h1>
+    </div>
+    <script>
+        let myobj={
+            name:"abhi",
+            class:1,
+            fried:"raj",
+            phone:123,
+        }
+        console.log(myobj);
+
+
+        //  jsonstr converts object into string type
+        let jsonstr=JSON.stringify(myobj);
+        console.log(jsonstr);
+
+
+        jsonstr=jsonstr.replace("abhi","jeet");
+        console.log(jsonstr);
+
+        // parse converts string back to object type
+        jsonstr=JSON.parse(jsonstr);
+        console.log(jsonstr);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <style>
+        .container {
+            width: 3000px;
+            height: 1000px;
+            background-color: black;
+
+        }
+        h1 {
+            color: green;
+            position: absolute;
+            top: -20px;
+            left: 180px;
+            right: 110px;
+
+        }
+
+        .left img {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            border-radius: 100px;
+            position: absolute;
+            left:100px;
+            /* position:absolute;  */
+        }
+
+        .mid {
+            display: inline-block;
+            width: 350px;
+            height: 10%;
+            border: 4px solid yellowgreen;
+            position: absolute;
+            left: 500px;
+        }
+
+        .right {
+            color: white;
+            display: inline-block;
+            position: absolute;
+            top: 30px;
+            left:100px;
+
+            position: absolute;
+        }
+
+        .naviationbar ul li {
+            font-size: large;
+            display: inline-block;
+            margin: 4px;
+            padding: 4px;
+        }
+
+        .naviationbar {
+            height: 100px;
+        }
+
+        .naviationbar ul li a {
+            color: white;
+        }
+
+        button {
+
+            color: black;
+            cursor: pointer;
+            border: 4px solid white;
+            padding: 3px;
+            border-radius: 5px;
+            ;
+        }
+
+        .forms {
+            position: absolute;
+            border: 10px solid red;
+            top: 200px;
+            left: 100px;
+            width: 500px;
+            height: 500px;
+            background-color: aliceblue;
+        }
+
+        .details {
+            /* position: absolute; */
+            position: relative;
+            top: 100px;
+            left: 100px;
+            margin-top: 10px;
+            margin-left: 100px;
+            /* border: 4px solid black; */
+
+        }
+
+        .btn {
+            border: 5px solid red;
+            position: absolute;
+            bottom: 50px;
+            left: 200px;   
+        }
+        #naam{
+            border-radius: 100px;
+            color:red;
+        }
+        #naam::placeholder{
+            color:red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="left">
+            <img src="logo.jpg" alt="">
+        </div>
+        <div class="mid">
+            <div class="naviationbar">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">service</a></li>
+                    <li><a href="#">contact us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <button class="btn">emai us</button>
+            <button class="btn">chat here</button>
+        </div>
+        <div class="forms">
+            <h1>welcome to bse</h1>
+            <div class="details">
+                <input type="text" name="" id="naam" placeholder="ENTER NAME">
+            </div>
+            <div class="details">
+                <input type="text" name="" placeholder="ROLL">
+            </div>
+            <div class="details">
+                <input type="text" name="" placeholder="SECTION">
+            </div>
+            <div class="details">
+                <input type="text" name="" placeholder="BRANCH">
+            </div>
+            <div class="details">
+                <input type="text" name="" placeholder="PHONE NO">
+            </div>
+            <div>
+                <button class="btn">submit</button>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>

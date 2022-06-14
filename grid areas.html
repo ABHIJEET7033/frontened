@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid aresa in html</title>
+    <style>
+        .container {
+            display: grid;
+            border: 2x solid black;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        .item {
+            background-color: yellow;
+            border: 4px solid black;
+            margin: 3px;
+        }
+
+        #navbar {
+            grid-area: navbar;
+            border: 4px solid red;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside {
+            grid-area: aside;
+            
+        }
+        #footer{
+            color: white;
+            background-color: red;
+           align-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="item">home about contactus email</div>
+        <div id="section" class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint sequi culpa ipsa
+            quam ab. Inventore sit possimus, magni optio placeat excepturi earum amet vero ab ea sed, consequatur ex
+            quidem fugit rerum facilis in quae pariatur esse! Esse, iste? Vel repellendus laudantium alias? Illo quo
+            molestias a laborum ex id libero alias, praesentium iusto magnam, impedit, culpa error tenetur vitae animi
+            dolor aliquid reiciendis delectus dolores totam ut incidunt veniam? Saepe aliquid explicabo enim modi rerum
+            adipisci quibusdam impedit unde quod atque hic numquam possimus, consequatur aspernatur tempore! Enim autem
+            veniam natus excepturi distinctio ipsum quia, fugiat, doloribus, inventore doloremque voluptates provident?
+            Voluptates, consequatur at illo quaerat ducimus magnam quae atque officia molestias! Totam porro minus a
+            voluptate quod alias, amet deserunt voluptates? Numquam sit quae minus aut quod sed enim dolor, sapiente
+            sunt quam non, perspiciatis dignissimos eveniet vitae veritatis et. Error obcaecati asperiores praesentium
+            odit iste tenetur aliquam hic quod eos ratione ut, vitae ipsam nam numquam quidem. Nesciunt libero commodi
+            perferendis quaerat debitis, fugit error asperiores? Reiciendis, laudantium. Aperiam a soluta deleniti,
+            cumque molestiae magni deserunt tempora praesentium fugiat. Aspernatur sapiente unde animi atque a. Ex, sed
+            molestias doloribus at ut temporibus eius debitis voluptates dolores autem ad exercitationem, eum reiciendis
+            facilis minus quae explicabo culpa assumenda necessitatibus blanditiis perspiciatis aliquam fugit tenetur!
+            Repellendus ratione quos saepe dignissimos quaerat aut hic, ipsum atque laboriosam ut exercitationem
+            deleniti expedita veritatis possimus est ea rerum placeat mollitia eius tempore ducimus magnam impedit.
+            Excepturi accusamus voluptates laudantium nihil nesciunt maiores enim recusandae minima. Quae minima quis
+            corporis deserunt, commodi mollitia magnam nemo ipsa, tempora voluptatibus porro dolore eligendi iste
+            perferendis! Aut perferendis dolorum, esse adipisci, necessitatibus iure et dignissimos assumenda a, tenetur
+            repellat odio pariatur doloremque nesciunt architecto! Voluptatem soluta quas consequatur aliquam, mollitia
+            molestiae quae! Quod itaque alias, ut magnam sed commodi expedita repellat incidunt. Quisquam nulla deleniti
+            pariatur maxime? Eum sit, recusandae obcaecati cumque possimus sed ad, voluptas non quisquam consequatur id
+            perferendis hic porro voluptatibus nemo in natus cupiditate sequi eaque assumenda animi facere vero minima.
+            Optio distinctio velit officiis rerum voluptas magni at dolores tempora tempore dolor accusantium atque
+            architecto neque fuga, nostrum repudiandae. Quo, reiciendis sed provident rem laudantium voluptatem atque
+            vero natus quas et neque nesciunt illum, ab aspernatur! Sint neque velit reiciendis delectus. Quia suscipit
+            omnis provident laboriosam incidunt eius totam dolor. Deserunt unde repudiandae optio nam esse autem quas
+            totam perferendis sed!</div>
+        <div id="aside" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde animi laudantium ea,
+            qui quidem quae dolores et veniam iure eaque.lorem400 Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Sunt, debitis blanditiis! Unde quae animi dignissimos nesciunt sed, iste nihil excepturi quo fuga sit
+            recusandae vel culpa, esse consectetur! Odit, impedit.</div>
+        <div id="footer" class="item">this is footer</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute and nth child</title>
+    <style>
+        .container {
+            width: 500px;
+            background-color: white;
+            border: 8px solid greenyellow;
+            margin: auto;
+            display: block;
+        }
+
+        input{
+            display: block;
+        }
+
+        input[type='text']
+        {
+            padding: 23px;
+            border:2px solid red;
+        }
+        a[target='_blank']{
+            font-size: 18px;
+            color: blue;
+        }
+        /* li:nth-child(1)
+        {
+            background-color: blue;
+        } */
+        li:nth-child(2n+1)
+        {
+            color:red;
+        }
+        li:nth-child(2n)
+        {
+           color: blueviolet;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="https://www.google.com/" target="_blank"> google baba ki jay ho</a>
+        <input type="text" placeholder="enetr name">
+        <br>
+        <input type="text" placeholder="enter password">
+        <br>
+        <button>submit</button>
+        <div>
+            <ul>
+                <li class="item" id="item1">item1</li>
+                <li class="item" id="item2">item2</li>
+                <li class="item" id="item3">item3</li>
+                <li class="item" id="item4">item4</li>
+               <li class="item" id="item5">item5</li>
+               <li class="item" id="item6">item6</li>
+               <li class="item" id="item7">item7</li>
+               <li class="item" id="item8">item8</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

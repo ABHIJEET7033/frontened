@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set timeout and time interval</title>
+</head>
+<body>
+    <div class="container">
+        <h1>this is my heading</h1>
+    </div>
+    <script>
+        console.log('this is my console');
+
+        // setTimeout this is a function which run 1 time after a fixed time interval;
+        // clearTimeout this is a fuction which run multiple times after a fixed time interval of time
+        function greet(name)
+        {
+            console.log('hello world!!!'+name);
+        }
+        // send only name of fuction not call it
+        // setTimeout(greet,5000,"baba");
+        // setInterval(greet,5000,"baba");   
+
+        intervalid=setInterval(greet,5000,"baba"); 
+        clearInterval(intervalid);
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date and time tutorial</title>
+</head>
+<body>
+    <div class="container">
+        <!-- this is date and time tutorial -->
+        current time is <span id="time"></span>
+    </div>
+    <script>
+        console.log('this is date ant time tutorial');
+
+        // let now=new Date();
+        // console.log(now); 
+
+        //  let newdate=new Date("2021-04-29");
+        //  console.log(newdate);
+
+        // let newdate=newdate(year,month,date,hrs,minutes,second,millisecond);
+
+        let newdate=new Date(2021,4,29,12,6,30.50);
+        console.log(newdate);
+
+        let yr=newdate.getFullYear();
+        console.log("the year is",yr);
+
+         let month=newdate.getMonth();
+         console.log(month+1);
+         
+         let day=newdate.getDay();
+        console.log("the day is",day);
+         let hrs=newdate.getHours();
+         console.log(hrs);
+         
+         let minut=newdate.getMinutes();
+        console.log(minut);
+         let second=newdate.getSeconds();
+         console.log(second);
+
+
+         newdate.setFullYear(2028);
+         console.log(newdate);
+
+
+         newdate.setDate(36)
+         console.log(newdate);
+
+
+         setInterval(updatetime,2000);
+
+         function updatetime()
+         {
+             time.innerHTML=new Date();
+
+         }
+         
+
+    </script>
+</body>
+</html>

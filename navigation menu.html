@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>naviation bar</title>
+    <style>
+        .container{
+             height: 1000px;
+            width: 100%; 
+            background-color: black;
+        }
+        .container ul{
+            height: 100px;
+            width: 100%;
+            background-color: blue;
+        }
+        .container li{
+            float:left;
+             padding: 12px;
+            margin: -2px; 
+        }
+        .container ul li a{
+            background-color: white;
+
+        }
+        .container ul li{
+            list-style: none;
+        }
+        #search{
+            background-color: white;
+            float: right;
+            padding: 4px;
+            margin: 4px;
+            border: 8px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">payment</a></li>
+            <li><a href="">mobile</a></li>
+            <li><a href="">setting</a></li>
+            <input type="text" name="searh" id="search" placeholder="search here">
+        </ul>
+    </div>
+</body>
+</html>
